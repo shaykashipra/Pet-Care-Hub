@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217739899996",
+    "project_id": "petcarehub-bc4ab",
+    "storage_bucket": "petcarehub-bc4ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217739899996:android:8723c0b9ada3fe3535e299",
+        "android_client_info": {
+          "package_name": "com.example.splash_ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP9nRCGbGRLamEw_JGAH77chbykE6lADM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

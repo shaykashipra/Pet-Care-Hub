@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:background="@color/lavender"
+    app:subtitleTextColor="@color/black"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+
+        android:transitionName="logo_image"
+        />
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pet_care_hub_2nd_page_logos_black_min"
+
+        android:transitionName="logo_image"
+        />
+
+
+
+</androidx.appcompat.widget.Toolbar>

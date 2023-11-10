@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/iv2"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pet_care_hub_2nd_page_logos_black_min"
+
+        android:transitionName="logo_image"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:id="@+id/ViewTreatmentsDate"
+            android:text="21 October 2023"
+            android:textSize="17sp"
+            android:fontFamily="@font/nunito_sans"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="0dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/ViewTreatmentsDate"
+            android:orientation="horizontal"
+            android:id="@+id/transactionId"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Treatment id:"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="start"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:inputType="number"
+                android:id="@+id/treatmentid"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="start"
+                android:text=" 12345678"/>
+
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_below="@+id/transactionId"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:id="@+id/doctorsName"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/nunito_sans"-->
+<!--                android:text="Room Charges"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20sp"-->
+<!--                android:gravity="start"/>-->
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20sp"-->
+<!--                android:inputType="number"-->
+<!--                android:textColor="#000"-->
+<!--                android:fontFamily="@font/nunito_sans"-->
+<!--                android:gravity="start"-->
+<!--                android:id="@+id/roomcharges"-->
+<!--                android:text="2000"/>-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/transactionId"
+            android:orientation="horizontal"
+            android:id="@+id/basicconsultancylayout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Basic Consultancy"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="start"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:editable="false"
+                android:textColor="#000"
+                android:inputType="number"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="start"
+                android:id="@+id/basic_charges"
+                android:text="250"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/basicconsultancylayout"
+            android:orientation="horizontal"
+            android:id="@+id/treatmentchargeslabel"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Treatment Charges"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="start"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="start"
+                android:id="@+id/treatmentcharges"
+                android:text="2100"/>
+        </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_below="@+id/treatmentchargeslabel"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:id="@+id/labchargeslabel"-->
+<!--            android:layout_height="wrap_content">-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:fontFamily="@font/nunito_sans"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Lab Charges"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="#000"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="20sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="start"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="20sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:inputType="number"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="#000"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:fontFamily="@font/nunito_sans"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="start"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/labcharges"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="0"/>&ndash;&gt;-->
+<!--        </LinearLayout>-->
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_below="@+id/treatmentchargeslabel"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:id="@+id/dispancarylabel"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/nunito_sans"-->
+<!--                android:text="Dispancary Charges"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20sp"-->
+<!--                android:gravity="start"/>-->
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20sp"-->
+<!--                android:fontFamily="@font/nunito_sans"-->
+<!--                android:gravity="start"-->
+<!--                android:inputType="number"-->
+<!--                android:textColor="#000"-->
+<!--                android:id="@+id/dispancarycharges"-->
+<!--                android:text="700"/>-->
+<!--        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/treatmentchargeslabel"
+            android:orientation="horizontal"
+            android:id="@+id/total"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Total Charges"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="start"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="start"
+                android:inputType="number"
+                android:textColor="#000"
+                android:id="@+id/totalcharges"
+                android:text="700"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitbill"
+            android:layout_below="@+id/total"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_bg"
+
+            android:layout_marginTop="20dp"/>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

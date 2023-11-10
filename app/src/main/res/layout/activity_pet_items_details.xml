@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetSection.PetItemsDetails"
+    android:background="@drawable/petdetailedpagecover">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/details_border"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:id="@+id/pet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/bungee"
+            android:hint="name"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/pet_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="Description"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="-10dp"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/pet_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:hint="Price"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:textColor="#009688"
+
+                />
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <ImageView
+        android:id="@+id/pet_img"
+        android:background="@drawable/border"
+        android:layout_width="300dp"
+      android:layout_height="300dp"
+        android:scaleType="centerInside"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+        android:src="@drawable/mixed_breed_promi_apu"
+    />
+
+</RelativeLayout>

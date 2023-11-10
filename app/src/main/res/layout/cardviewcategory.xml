@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    android:elevation="4dp"
+    android:background="@drawable/border"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_margin="5dp"
+    android:id="@+id/petitem">
+
+    <LinearLayout
+        android:background="#dfffd1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:background="@drawable/border"
+            android:src="@drawable/mixed_breed_promi_apu"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:hint="name"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:hint="Price"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+      android:layout_marginBottom="15dp"
+                />
+
+
+                 <TextView
+                     android:id="@+id/tv4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/border"
+
+                     android:padding="10dp"
+                     android:text="Confirm Purchase"
+                     android:textColor="@color/black"
+                     android:textStyle="bold"
+
+
+                     />
+
+
+
+
+
+            <ImageView
+
+                android:id="@+id/forward"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

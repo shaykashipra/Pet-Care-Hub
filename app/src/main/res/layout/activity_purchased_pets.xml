@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetSection.petShop"
+    android:background="#EAF4F8">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+
+        >
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pet_care_hub_2nd_page_logos_black_min"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Purchased Pets"
+                android:textColor="#000000"
+                android:fontFamily="@font/overpass_semibold"
+                android:textSize="25sp"
+                android:id="@+id/portallabel2"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8F8F8F"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/portalview2"
+            android:layout_below="@+id/portallabel"
+
+            />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/rec1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

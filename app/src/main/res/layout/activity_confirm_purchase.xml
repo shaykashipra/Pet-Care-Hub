@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirm.ConfirmPurchase"
+    android:background="@drawable/petdetailedpagecover">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/bungee"
+        android:gravity="center_horizontal"
+        android:text="MY CART"
+        android:textColor="#9C27B0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="410dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/bungee"
+        android:text="Total BDT"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv1" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="186dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="72dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/bungee"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv1" />
+
+    <Button
+        android:id="@+id/confirm_purchase"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="17dp"
+        android:text="CONFIRM  PURCHASE"
+        android:textColor="@color/white"
+        android:transitionName="trans_signin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
+
+        />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart is empty"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/confirm_purchase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

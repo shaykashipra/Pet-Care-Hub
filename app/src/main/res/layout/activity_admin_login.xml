@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#EAF4F8"
+
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pet_care_hub_2nd_page_logos_black_min"
+
+                android:transitionName="logo_image"
+                />
+
+            <TextView
+                android:id="@+id/tv2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="16sp"
+                android:text="Hello Admin, Welcome Back!"
+
+                android:transitionName="logo_text"
+
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="SIGN IN TO CONTINUE AS ADMIN"
+                android:textSize="16sp"
+                android:transitionName="trans_slogan"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/username"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeErrorColor="#F44336"
+
+                    app:endIconTint="#6E6E6E"
+                    android:transitionName="trans_username">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:foregroundTint="#00BCD4"
+                        android:drawableStart="@drawable/baseline_person_pin_24"
+                        android:drawableTint="#6E6E6E"
+                        android:backgroundTint="#00BCD4"
+                        android:hint="Username"
+
+                        app:endIconMode="clear_text"
+                        app:endIconTint="#6E6E6E"
+
+                       />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                    app:boxStrokeErrorColor="#F44336"
+                    android:transitionName="trans_pass"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawableStart="@drawable/baseline_lock_24"
+                        android:drawableTint="#6E6E6E"
+                        android:hint="Password"
+                        android:backgroundTint="#00BCD4"
+                        android:inputType="textPassword"
+                        android:foregroundTint="#00BCD4"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/user_login"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="LOGIN AS USER"
+                    android:textColor="#3F51B5"
+                    android:gravity="right|center"
+
+                    android:layout_gravity="right"
+                    android:elevation="0dp"
+                    android:transitionName="trans_forget"
+                    />
+
+                <Button
+                    android:id="@+id/signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:backgroundTint="#00BCD4"
+                    android:text="SIGN IN"
+                    android:textColor="@color/white"
+                    android:transitionName="trans_signin"
+                    tools:ignore="TextContrastCheck" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

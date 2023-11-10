@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">splash_UI</string>
+    <string name="label">Welcome back!\n\nto our cozy corner of the pet world! 🐾</string>
+    <string name="nav">navigation drawer</string>
+    <string name="nav_close">close</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+
+</resources>

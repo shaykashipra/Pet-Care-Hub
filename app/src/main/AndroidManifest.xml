@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Pet Care Hub"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Splash_UI"
+        tools:targetApi="31">
+        <activity
+            android:name=".Emergency.PetCareWeb"
+            android:exported="false" />
+
+        <activity
+            android:name=".Emergency.Emergency_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AllUserInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Bkash.bkash_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Bkash.bkash"
+            android:exported="false" />
+        <activity
+            android:name=".PetSection.purchased_pets"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.PetMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.PetAccessories"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.PetFood"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddPet"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AvailablePet"
+            android:exported="false" />
+        <activity
+            android:name=".About.About"
+            android:exported="false" />
+        <activity
+            android:name=".ClinicDoctor.PatientAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".Clinic.Appoinments_all"
+            android:exported="false" />
+        <activity
+            android:name=".ClinicDoctor.doctor_login"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Reception.CalculateBill"
+            android:exported="false" />
+        <activity
+            android:name=".ClinicDoctor.GeneratePrescription"
+            android:exported="false" />
+        <activity
+            android:name=".ClinicDoctor.DoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Clinic.Treatment"
+            android:exported="false" />
+        <activity
+            android:name=".Clinic.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Clinic.Appointments"
+            android:exported="false" />
+        <activity
+            android:name=".confirm.ConfirmPurchase"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.admin_login"
+            android:exported="false" />
+        <activity
+            android:name=".PetSection.PetItemsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ClinicSection"
+            android:exported="false" />
+        <activity
+            android:name=".GroceryShop"
+            android:exported="false" />
+        <activity
+            android:name=".PetSection.petShop"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

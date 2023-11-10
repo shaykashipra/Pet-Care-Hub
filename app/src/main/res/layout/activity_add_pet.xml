@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:background="#EAF4F8"
+
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pet_care_hub_2nd_page_logos_black_min"
+
+                android:transitionName="logo_image"
+                />
+            <ImageView
+                android:id="@+id/admin_act"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/baseline_home_24"/>
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/preview_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/catpeek"
+                android:scaleType="fitCenter"
+                android:transitionName="logo_image" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/choose_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:backgroundTint="#C3C3C3"
+                android:text="Choose"
+                android:textColor="@color/black"
+                />
+
+            <ProgressBar
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+
+                />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Upload Animal Photo🐾"
+                android:textSize="16sp"
+
+
+                android:transitionName="trans_slogan" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Animal_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                    app:boxStrokeErrorColor="#F44336"
+                    android:transitionName="trans_username"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableStart="@drawable/baseline_animal_24"
+                        android:drawableTint="#6A6565"
+                        android:hint=" Animal Name"
+                        android:inputType="text"
+
+                        app:endIconMode="clear_text"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Animal_Description"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeErrorColor="#F44336"
+
+
+                    android:transitionName="trans_username"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#6A6565"
+                        android:drawableStart="@drawable/baseline_description_24"
+                        android:drawableTint="#6A6565"
+                        android:hint=" Animal Description"
+                        android:inputType="text"
+                           android:id="@+id/edit_description"
+                        app:endIconMode="clear_text"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Animal_Price"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                    app:boxStrokeErrorColor="#F44336"
+                    android:transitionName="trans_pass"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableStart="@drawable/baseline_money_24"
+                        android:drawableTint="#6A6565"
+                        android:hint=" BDT"
+                        android:inputType="numberDecimal"
+                        app:endIconMode="clear_text"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+
+                    android:background="@color/design_default_color_secondary_variant"
+                    android:text="UPLOAD"
+
+                    android:transitionName="trans_signin"
+                    tools:ignore="TextContrastCheck" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</ScrollView>

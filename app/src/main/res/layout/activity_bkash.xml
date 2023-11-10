@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    tools:context=".Bkash.bkash">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="413dp">
+
+        <TextView
+            android:id="@+id/account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:text="Account Number"
+            android:textColor="#7E7F80"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bkash_pin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bkash PIN"
+            android:textColor="#7E7F80"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.547" />
+
+        <TextView
+            android:id="@+id/amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Amount"
+            android:textColor="#7E7F80"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.693" />
+
+        <EditText
+            android:id="@+id/bkash_pin"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="236dp"
+            android:background="@drawable/username_bg"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:ems="10"
+            android:hint=" Enter Bkash PIN"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/account_num"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="196dp"
+            android:background="@drawable/username_bg"
+            android:drawableStart="@drawable/baseline_phone_android_24"
+            android:ems="10"
+            android:hint=" 01xxxxxxxxx"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/payment"
+
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/bkash_signin_btn_bg"
+            android:backgroundTint="#E91E63"
+            android:gravity="center"
+            android:text="Payment"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/username_bg"
+            android:drawableStart="@drawable/baseline_money_24"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint=" Enter Amount"
+            android:gravity="center|left"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/bkash_logo"
+            android:layout_width="113dp"
+            android:layout_height="95dp"
+            android:src="@drawable/bkash_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.191" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

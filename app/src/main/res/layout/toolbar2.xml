@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar2"
+
+    app:subtitleTextColor="@color/black"
+    android:orientation="horizontal"
+
+    >
+
+
+   <ImageView
+
+       android:id="@+id/menuIcon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/baseline_menu_24"
+       />
+
+
+</androidx.appcompat.widget.Toolbar>

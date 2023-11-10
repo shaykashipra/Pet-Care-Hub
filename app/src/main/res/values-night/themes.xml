@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Splash_UI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here.
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#088E49</item>
+        <item name="colorAccent">#F44336</item>
+-->
+        <!-- for UI to login page animated transition  -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.Splash_UI" parent="Base.Theme.Splash_UI" />
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/petdetailedpagecover">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/iv2"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pet_care_hub_2nd_page_logos_black_min"
+
+
+        />
+
+    <EditText
+        android:id="@+id/medicinename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Medicine Name"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/addmedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ok" />
+
+</LinearLayout>
