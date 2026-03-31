@@ -1,2 +1,7 @@
-# Pet Care Hub
- This project is java based Android studio project
+
+##Technical Specifications
+
+-##Language: Java
+-##Platform: Android
+-##Development Environment: Android Studio
+-##Architecture: Standard Android application framework with Firebase database support
